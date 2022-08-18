@@ -256,6 +256,7 @@ h2{
   .portfolio{
     background: var(--color-gradent), url(./images/bg_img.png);
     padding: 4rem 3rem;
+    margin-top: 3rem;
   }
    .portfolio_heading{
     padding-bottom: 4rem;
@@ -484,3 +485,77 @@ h2{
     margin: 5rem 0;
     
    }
+.port_heading{
+  margin: 4rem 0;
+}
+.portfolio_container{
+  display: flex;
+  justify-content: center;
+  
+}
+.portfolio_blocks > img{
+  width: 25rem;
+}
+.outer_black{
+  width: 25rem;
+}
+.plus_icon {
+  font-size: 4rem;
+  padding: 0 1.2rem;
+  background-color: #040404;
+  width: 4.5rem;
+  position: relative;
+  /* bottom: 4.9rem; */
+  left: 20.5rem;
+  color: var(--white-color);
+  font-weight: 100;
+  top: 24rem;
+}
+.black_background {
+  background: linear-gradient(215deg, rgba(14,14,14,0.8547794117647058) 0%, rgba(17,10,13,0.8547794117647058) 92%), url(./images/img5.png) !important;
+  background-repeat: no-repeat;
+}
+.black_background > p {
+  padding: 13.33rem 4.6rem;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-align: center;
+}
+/* ...............................services page................................. */
+.services_heading{
+
+  margin: 3rem 0;
+}
+.services_img > img{
+  width: 24rem;
+}
+.services_container{
+  border: 1px solid #a5a5a5;
+  padding: 3rem;
+}
+.services_container_heading > h4{
+  font-size: 1.477rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.services_block{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.services_txt > p{
+    line-height: 2rem;
+    padding: 0 2rem 0 0;
+}
+.services_dropdown{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #a5a5a5;
+  padding: 4rem 3rem;
+  margin: 5rem 0;
+}
+.dropdown_txt > p{
+  font-size: 1.477rem;
+}
+ 
