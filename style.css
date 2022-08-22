@@ -40,10 +40,13 @@ h2{
   
 
 }
-.top_header .link{
+.link{
     padding: 0.6rem 0;
 }
-.top_header .social_links{
+.link > a{
+  color: #7f7f7f;
+}
+.social_links{
     display: flex;
     
    
@@ -88,7 +91,7 @@ h2{
   .nav{
     display: flex;
     justify-content: space-between;
-    margin: 0 0 4rem 0;
+   
 
   }
   .logo > p{
@@ -110,7 +113,12 @@ h2{
   }
  
   .Active:focus{
-    background-color: #154ba3;
+    background-color: #111111;
+    padding: 0.5rem 1rem;
+  }
+  hr.nav_line{
+    background: linear-gradient(262deg, rgba(189,164,73,1) 0%, rgba(82,171,183,1) 100%);
+    margin: 3rem 0 7rem 0;
   }
   .content{
     text-align: center;
@@ -193,8 +201,8 @@ h2{
     color: var(--white-color);
     width: 90rem;
   }
-   .block_heading h3:nth-child(2){
-    color: var(--white-color);
+   .block_heading >  h3:nth-child(2){
+    color: var(--white-color) !important;
   }
   .block_heading h3{
    font-size: 1.875rem;
@@ -230,10 +238,11 @@ h2{
     gap: 2rem;
   }
   .card_img .txt{
-    background: var(--color-gradent);
+    background: linear-gradient(135deg, rgb(131 181 2 / 85%) 0%, rgb(2 196 196 / 87%) 100%);
     padding: 1rem;
     position: relative;
     top: 4rem;
+    color: var(--white-color);
     text-transform: uppercase;
     width: 6rem;
   }
@@ -250,6 +259,9 @@ h2{
     color: #898989;
     line-height: 2rem;
     padding: 0.7rem 4rem 0.2rem 0;
+  }
+  .card_content > a{
+    color: #002fc8;
   }
   /* blog ends */
   /* portfolio starts */
@@ -275,27 +287,33 @@ h2{
     display: flex;
     justify-content: center;
   }
- 
-  .black_bg{
-    background: linear-gradient(215deg, rgba(14,14,14,0.8547794117647058) 0%, rgba(17,10,13,0.8547794117647058) 92%), url('./images/img5.png') !important;
-   
-    
-  }
+ .portfolio_block > img{
+  width: 23rem;
+ }
+ .black_bg {
+  background: linear-gradient(215deg, rgba(14,14,14,0.8547794117647058) 0%, rgba(17,10,13,0.8547794117647058) 92%), url(./images/img5.png) !important;
+  width: 23rem;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
   .black_bg p{
-    padding: 10.6rem 4.6rem;
+    padding: 12.2rem 4.6rem;
     font-size: 1.125rem;
     text-transform: uppercase;
     color: var(--white-color);
     text-align: center;
+  }
+  .plus_black{
+    position: relative;
   }
     .plus{
     font-size: 4rem;
     padding: 0 1.2rem;
     background-color: #040404;
     width: 4.5rem;
-    position: relative;
-    bottom: 4.9rem;
-    left: 15.6rem;
+    position: absolute;
+    top: 22.22rem;
+    left: 18.5rem;
     color: var(--white-color);
     font-weight: 100;
   }
@@ -328,7 +346,7 @@ h2{
     border: none;
   }
   .login a{
-    background: linear-gradient(90deg, rgb(165 11 41) 0%, rgb(58 56 193) 100%);
+    background: linear-gradient(135deg, rgba(131,181,2,1) 0%, rgba(2,196,196,1) 100%);
     padding: 1rem 1.8rem;
     text-transform: uppercase;
     color: var(--white-color);
@@ -338,7 +356,7 @@ h2{
   /* footer starts */
   .footer_bg{
     color: var(--white-color);
-    background: linear-gradient(90deg, #02030282 0%, #020302c2 100%), url('./images/bottom_img.png');
+    background: linear-gradient(90deg, #02030282 0%, #020302c2 100%), url('./images/btm.jpg');
     padding: 2rem 0;
   }
   .footer_content{
@@ -393,8 +411,13 @@ h2{
     font-size: 1.889rem;
     font-weight: 500;
   }
+  .blog_heading + hr{
+    background-color: #e8cbd3;
+    height: 1.5px;
+    border: none;
+  }
   .blog_btn{
-    margin: 5rem 0;
+    margin: 5rem 0 18.75rem 0;
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
@@ -498,22 +521,23 @@ h2{
 }
 .outer_black{
   width: 25rem;
+  position: relative;
 }
 .plus_icon {
   font-size: 4rem;
   padding: 0 1.2rem;
   background-color: #040404;
   width: 4.5rem;
-  position: relative;
-  /* bottom: 4.9rem; */
+  position: absolute;
   left: 20.5rem;
   color: var(--white-color);
   font-weight: 100;
-  top: 24rem;
+  top: 24.5rem;
 }
 .black_background {
   background: linear-gradient(215deg, rgba(14,14,14,0.8547794117647058) 0%, rgba(17,10,13,0.8547794117647058) 92%), url(./images/img5.png) !important;
-  background-repeat: no-repeat;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 .black_background > p {
   padding: 13.33rem 4.6rem;
@@ -532,7 +556,7 @@ h2{
 }
 .services_container{
   border: 1px solid #a5a5a5;
-  padding: 3rem;
+  padding: 4.5rem 3rem 5.5rem 3rem;
 }
 .services_container_heading > h4{
   font-size: 1.477rem;
