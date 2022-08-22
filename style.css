@@ -201,16 +201,17 @@ h2{
     color: var(--white-color);
     width: 90rem;
   }
-   .block_heading >  h3:nth-child(2){
+  
+  .content_blocks:nth-child(2) > .block_heading h3{
     color: var(--white-color) !important;
   }
-  .block_heading h3{
+  .block_heading  h3{
    font-size: 1.875rem;
    font-weight: 500;
    text-transform: uppercase;
-   color: #0054a6;
+   color: #0054a6 ;
   }
-   .block_heading p{
+   .block_heading > p{
     line-height: 1.8rem;
     font-size: 1rem;
     padding: 1rem 1rem 1rem 0;
